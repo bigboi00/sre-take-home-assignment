@@ -12,9 +12,13 @@
   ],
   "routes": [
     {
-      "src": "/orders/(.*)",
+      "src": "/orders",
       "dest": "/backend/index.js"
     },
+    {
+      "src": "/orders/(.*)",
+      "dest": "/backend/index.js"
+    },,
     {
       "src": "/(.*)",
       "dest": "/frontend/index.html"
