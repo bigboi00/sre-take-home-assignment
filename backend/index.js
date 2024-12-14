@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const port = 3000;
-const url = process.env.MONGODB_URL;
+const url = "mongodb+srv://leearthhur02:Arthhurlee02@feedmecluster.sktpj.mongodb.net/?retryWrites=true&w=majority&appName=FeedmeCluster";
 const dbName = "DevOpsAssignment";
 
 const client = new MongoClient(url);
