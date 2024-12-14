@@ -19,9 +19,5 @@
       "src": "/(.*)",
       "dest": "/frontend/index.html"
     }
-  ],
-  "env": {
-    "MONGODB_URL": "mongodb+srv://leearthhur02:Arthhurlee02@feedmecluster.sktpj.mongodb.net/?retryWrites=true&w=majority&appName=FeedmeCluster",
-    "NODE_ENV": "production"
-  }
+  ]
 }
