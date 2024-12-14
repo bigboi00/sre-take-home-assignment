@@ -27,11 +27,6 @@ async function main() {
 
   app.use(cors());
 
-    // Root route
-  app.get("/", (req, res) => {
-    res.send("Welcome to the DevOps Assignment API!");
-  });
-
   app.get("/orders", async (req, res) => {
     const orders = await orderCollection.find({}).toArray();
     res.send(orders);
