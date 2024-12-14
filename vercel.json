@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "frontend/dist/**/*",
+      "src": "frontend/index.html",
       "use": "@vercel/static"
     },
     {
@@ -13,12 +13,12 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/frontend/index.html"
+      "dest": "/backend/index.js"
     },
     {
       "src": "/(.*)",
-      "dest": "/backend/index.js"
-    },
+      "dest": "/frontend/index.html"
+    }
   ],
   "env": {
     "MONGODB_URL": "mongodb+srv://leearthhur02:Arthhurlee02@feedmecluster.sktpj.mongodb.net/?retryWrites=true&w=majority&appName=FeedmeCluster",
