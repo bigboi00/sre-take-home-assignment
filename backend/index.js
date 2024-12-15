@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const port = 3000;
-const url = "mongodb+srv://leearthhur02:Arthhurlee02@feedmecluster.sktpj.mongodb.net/?retryWrites=true&w=majority&appName=FeedmeCluster";
+const url = "mongodb+srv://:@feedmecluster.sktpj.mongodb.net/?retryWrites=true&w=majority&appName=FeedmeCluster";
 const dbName = "Feedme";
 
 const client = new MongoClient(url);
